@@ -331,7 +331,7 @@
 			   &pioD 18 GPIO_ACTIVE_HIGH>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_usb_default>;
-	status = "okay";
+	status = "disabled";
 };
 
 &usb2 {
