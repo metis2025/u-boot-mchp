@@ -327,11 +327,11 @@
 &usb1 {
 	num-ports = <3>;
 	atmel,vbus-gpio = <0
-			   &pioD 15 GPIO_ACTIVE_HIGH
+			   &pioD 17 GPIO_ACTIVE_HIGH
 			   &pioD 18 GPIO_ACTIVE_HIGH>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_usb_default>;
-	status = "disabled";
+	status = "okay";
 };
 
 &usb2 {
