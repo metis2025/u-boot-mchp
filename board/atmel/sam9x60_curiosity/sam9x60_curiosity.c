@@ -226,6 +226,8 @@ int board_init(void)
 	// board_leds_init();
 	at91_pio3_set_d_periph(AT91_PIO_PORTD,  17, 1);
 	at91_pio3_set_d_periph(AT91_PIO_PORTD,  18, 1);
+	at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  17, 0);
+	at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  18, 0);
 
 	return 0;
 }
