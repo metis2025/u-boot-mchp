@@ -228,7 +228,8 @@ int board_init(void)
 	at91_pio3_set_d_periph(AT91_PIO_PORTD,  18, 1);
 	at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  17, 0);
 	at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  18, 0);
-
+	at91_set_pio_input(AT91_PIO_PORTD,  17, 1);
+	at91_set_pio_input(AT91_PIO_PORTD,  18, 1);
 	return 0;
 }
 
