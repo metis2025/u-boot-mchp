@@ -223,7 +223,9 @@ int board_init(void)
 	gd->bd->bi_boot_params = gd->bd->bi_dram[0].start + 0x100;
 
 	oled_splash();
-	board_leds_init();
+	// board_leds_init();
+	at91_pio3_set_d_periph(AT91_PIO_PORTD,  17, 1);
+	at91_pio3_set_d_periph(AT91_PIO_PORTD,  18, 1);
 
 	return 0;
 }
