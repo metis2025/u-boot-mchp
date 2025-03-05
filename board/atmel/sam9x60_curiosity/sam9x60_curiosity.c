@@ -28,6 +28,7 @@ DECLARE_GLOBAL_DATA_PTR;
 
 void at91_prepare_cpu_var(void);
 
+#if 0
 // OLED IMAGE CONVERT site
 // https://javl.github.io/image2cpp/
 static const uint8_t logo[] = {
@@ -160,7 +161,7 @@ static int oled_splash(void) {
     printf("OLED Splash Done\n");
     return 0;
 }
-
+#endif
 static void board_leds_init(void)
 {
 #if CONFIG_IS_ENABLED(LED)
@@ -221,8 +222,8 @@ int board_init(void)
 {
 	/* address of boot parameters */
 	gd->bd->bi_boot_params = gd->bd->bi_dram[0].start + 0x100;
-
-	oled_splash();
+	// oled splash 기능은 bootstrap으로 이동
+	// oled_splash();
 	// board_leds_init();
 	at91_pio3_set_d_periph(AT91_PIO_PORTD,  17, 1);
 	at91_pio3_set_d_periph(AT91_PIO_PORTD,  18, 1);
