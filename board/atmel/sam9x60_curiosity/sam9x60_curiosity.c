@@ -242,9 +242,9 @@ int board_init(void)
 	at91_set_pio_input(AT91_PIO_PORTB, 14, 1);
 	at91_set_pio_output(AT91_PIO_PORTA, 25, 0);
 	at91_set_pio_output(AT91_PIO_PORTD, 18, 0);
-	at91_set_pio_output(AT91_PIO_PORTD, 20, 0);
-	at91_set_pio_output(AT91_PIO_PORTD, 17, 0);
-	at91_set_pio_output(AT91_PIO_PORTD, 19, 0);
+	//at91_set_pio_output(AT91_PIO_PORTD, 20, 0);
+	//at91_set_pio_output(AT91_PIO_PORTD, 17, 0);
+	//at91_set_pio_output(AT91_PIO_PORTD, 19, 0);
 	at91_set_pio_output(AT91_PIO_PORTB, 11, 0);
 	at91_set_pio_output(AT91_PIO_PORTA, 29, 0);
 	at91_set_pio_output(AT91_PIO_PORTB, 14, 0);
