@@ -225,12 +225,14 @@ int board_init(void)
 	// oled splash 기능은 bootstrap으로 이동
 	// oled_splash();
 	// board_leds_init();
-	at91_pio3_set_d_periph(AT91_PIO_PORTD,  17, 1);
-	at91_pio3_set_d_periph(AT91_PIO_PORTD,  18, 1);
-	at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  17, 0);
-	at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  18, 0);
-	at91_set_pio_input(AT91_PIO_PORTD,  17, 1);
-	at91_set_pio_input(AT91_PIO_PORTD,  18, 1);
+	
+	// gpio move to bootstrap
+	// at91_pio3_set_d_periph(AT91_PIO_PORTD,  17, 1);
+	// at91_pio3_set_d_periph(AT91_PIO_PORTD,  18, 1);
+	// at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  17, 0);
+	// at91_pio3_set_pio_pulldown(AT91_PIO_PORTD,  18, 0);
+	// at91_set_pio_input(AT91_PIO_PORTD,  17, 1);
+	// at91_set_pio_input(AT91_PIO_PORTD,  18, 1);
 	return 0;
 }
 
