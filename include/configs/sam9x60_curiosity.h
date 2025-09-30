@@ -18,7 +18,7 @@
 
 /* SDRAM */
 #define CFG_SYS_SDRAM_BASE		0x20000000
-#define CFG_SYS_SDRAM_SIZE		0x4000000	/* 64 MB */
-// #define CFG_SYS_SDRAM_SIZE		0x8000000	/* 128 MB */
+// #define CFG_SYS_SDRAM_SIZE		0x4000000	/* 64 MB */
+#define CFG_SYS_SDRAM_SIZE		0x8000000	/* 128 MB */
 
 #endif
